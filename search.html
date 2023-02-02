@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shotster</title> 
+    <link rel="stylesheet" href="style.css">
+    <style >
+  .search-box{
+    background:  #c5e7f8;
+    width: 400px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    padding:  0 15px;
+    box-shadow: 0 0 0 0.1em #171717 inset ;
+  }
+  .search-box input{
+    width: 100%;   background: transparent;
+    padding: 7px;
+    outline: #c5e7f8;
+    border: 0%;
+  }
+  *{border: 0;
+      box-sizing: border-box;
+      margin: 0;
+      padding:0;}
+    :root{
+        font-size: calc(16px + ( 24 - 16 ) * ( 100vw - 320px)/(1920 - 320));
+    }
+    body, button, input{
+        font:1em Hind, sans-serif ;
+        line-height: 1.5cm;
+    }
+    body,input{
+        color: #171717;
+    }
+    body{ background: #c5e7f8;
+    height:0vh;
+    }
+body, .search-bar{
+    display: flex;
+}
+.search-bar input, .s-bttn{
+     width: 3em; height: 3em;
+    }
+     .search-bar input:invalid:not(:focus), .s-bttn{
+        cursor: pointer;
+          }   
+          .search-bar input,.s-bttn, .s-bttn:before, .s-bttn:after{
+     transition :all 0.25s ease-out;
+    } 
+      .search-bar, .search-bar input:focus,
+      .search-bar input:valid
+      { width: 100%;}
+      
+      .search-bar input:focus,
+     .search-bar input:not(:focus) + .s-bttn:focus { outline: transparent; }
+     .search-bar { 
+        margin: auto ;
+        padding: 1.5em ;
+        justify-content: center ;
+        max-width: 30em ; 
+     }  
+    .search-bar input {    background: transparent;
+    padding: 0.75em ;
+    border-radius: 1.5em;
+    transform: translate(o.5em,0.5em) scale(0.5);
+    transform-origin: 100% 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+        box-shadow: 0 0 0 0.4em #171717 inset ;
+    }
+  
+    </style>
+</head>
+<body style="background-color:#ffffff" ;>
+    <div  class="search-box"> Search:<input type="text" placeholder="who do you want to find"  > 
+    </div>
+    <form action="" class="search-bar">
+        <input type="search" name="search" pattern=".*\s.*"  placeholder="join" required>
+        <button class="s-bttn" type="submit">
+            <span>Search</span>
+        </button>
+    </form>
+    <br><br><br><br><br><br><br><br>
+ 
+<nav >
+  <ul>
+    <li><button ><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+      <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+    </svg></a> </button></li>
+    <li><button><a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16">
+      <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/>
+    </svg></a></button></li>
+    <li><button><a href="profile1.html"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+      <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+    </svg></a></button></li>
+  </ul>
+</body>
+</html>

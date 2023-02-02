@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>profile</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .settings-container { 
+  position: relative;
+}
+.settings-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+}
+.post-btn{
+  position: absolute;
+  top: 0%;
+  right: 20%;
+}
+.settings-button {
+  background-color: #4a6298;
+  width: 250%;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.post-btn {
+  background-color: #4a6298;
+  width: 150%;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.settings-options, .post-options {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.edit, .privacy, .invite, .about,.feed, .pic {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.edit:hover, .privacy:hover, .invite:hover, .about:hover, .feed:hover, .pic:hover {
+  background-color: #f1f1f1;
+}
+
+.settings-container:hover .settings-options , .post:hover .post-options{
+  display: block;
+}
+.box {
+  background-color: rgb(139, 162, 231);
+  width: 15%;
+  border-radius: 50%;
+  height: 70px;
+  margin: auto;
+  margin-top: 20px;
+  padding-top: 50px;
+  padding: 20px;
+  margin-left: 10%;
+
+}
+button {
+  background-color: #4a6298;
+  width: 50%;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+/* .privacy-options:hover {
+  display: block;
+}
+.privacy-options {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;} */
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><button ><a href="search.html"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+      </svg></a> </button></li>
+      <li><button><a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16">
+        <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/>
+      </svg></a></button></li>
+      <li><button><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+      </svg></a></button></li>
+    </ul>
+  </nav>
+  <div class="box"> photo</div>
+  <!-- <div class="post">
+    <button class="post-btn">Post</button>
+    <div class="post-options">
+      <a href="#" class="feed">Feed</a>
+      <a href="#" class="pic">Picture</a>
+    </div>
+  </div> -->
+  <div class="settings-container">
+    <div class="settings-button">Settings</div>
+    <div class="settings-options">
+      <a href="#" class="edit">edit profile</a>
+      <a href="#" class="privacy">privacy</a>
+<!--       
+      <div id="privacy">
+        <i onclick="privacy()">privacy</i>
+      </div> -->
+      
+<!--             
+           <form>
+           
+            <div class="privacy-options">
+               <h3>privacy settings</h3>
+        posts veiws. <select>
+          <option value="option1">everybody</option>
+          <option value="option2">friends</option>
+          <option value="option3">selected friends</option>
+          <option value="option4">none</option>
+        
+        </select><br><br>
+        post comments.  <select>
+          <option value="option1">everybody</option>
+          <option value="option2">friends</option>
+          <option value="option3">selected friends</option>
+          <option value="option2">none</option>
+        </select><br><br>   
+            <button type="submit">Save Changes</button>
+          </form>
+        </div>
+         -->
+      <a href="#" class="invite">invite a friend</a>
+      <a href="#" class="about">about us</a>
+    </div>
+  </div>
+</div></div>
+  
+  
+  
+
+<!-- javascript 
+<script>
+
+  function privacy(){
+   privacy.innerhtml+=" <form>
+           
+           <div class="privacy-options">
+              <h3>privacy settings</h3>
+       posts veiws. <select>
+         <option value="option1">everybody</option>
+         <option value="option2">friends</option>
+         <option value="option3">selected friends</option>
+         <option value="option4">none</option>
+       
+       </select><br><br>
+       post comments.  <select>
+         <option value="option1">everybody</option>
+         <option value="option2">friends</option>
+         <option value="option3">selected friends</option>
+         <option value="option2">none</option>
+       </select><br><br>   
+           <button type="submit">Save Changes</button>
+         </form>
+       </div> "
+    setting.privacy.style.right="0";"
+
+  }
+</script>
+</body>
+</html>
+-->

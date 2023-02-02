@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="sharedfile.css" rel="stylesheet">
+    <title>pic Page</title>
+    <style>
+        .container{
+            max-width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            align-items: center; 
+          margin-top: 10%;
+        }
+        .container1{
+            max-width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+             align-items: center;
+             margin-top: 5%;
+          
+        }
+
+        form{
+            background-color: rgb(206, 203, 204);
+            padding: 15px;
+            border-radius: 7px;
+            font-size: larger;
+        }
+        .form1{
+            background-color: rgb(206, 203, 204);
+            padding: 45px;
+            border-radius: 7px;
+            font-size: larger;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form">
+            <form action="upload.php" method="post" enctype="multipart/form-data">
+                 Image Upload: <br><br>
+                <input type="file" name="image_file" value="choose image"><br><br>
+                caption: <br><br>
+                <input type="text" name="description" placeholder="caption"><br><br>
+
+                <input type="submit" name="submit" value="Upload">
+            </form>
+        </div>
+        
+    </div>
+    <div class="container1">
+        <div class="form1" >
+            <form action="upload.php" method="post" enctype="multipart/form-data">
+                caption: <br><br>
+                <input type="text" name="description" placeholder="caption"><br><br>
+
+                <input type="submit" name="submit" value="Upload">
+            </form>
+        </div>
+        
+    </div>
+</body>
+
+</html>

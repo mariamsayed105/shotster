@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+      font-family: 'popins', p22-nudgewink-pro , sans-serif;
+      font-style: normal;
+      font-weight: 300;
+}
+/* box */
+  .box {
+ background-color: rgba(79, 81, 87, 0.475); 
+  width: 70%;
+  height: 400px;
+  margin: auto;
+  margin-top: 50px;
+  padding-top: 50px;
+  padding: 20px;
+ 
+    height: auto;
+}
+
+.var {
+  font-weight: bold;
+  text-align: center;
+}
+body{
+    background-color: #efefef;
+     /* scroll feature x-horizontal */
+    overflow-x: scroll; 
+    margin: 0 auto; /* This line centers the element horizontally */
+    margin-top: 50px; 
+}
+/* navigator */
+nav {
+  height: 13%;
+    background-color:#7c7fbc;
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+   /* used to align items in a vertical line  */
+    /* flex-direction: column; */
+    /* specify stack order ,the last specifed overlaps everything else */
+    z-index: 100;
+  }
+  .nav-container {
+    position: relative;
+  }
+  nav ul {
+    display: flex;
+     /* used to properly align items in a proper space /horizontal line (flex-end,)*/
+    justify-content: space-between;
+    list-style-type: none;
+    margin-bottom: 0 ;
+    padding: 0;
+    position:sticky;
+  }
+  nav li {
+    color: #c5e7f8;
+    text-align: center;
+    width: 33.33%;
+    position:sticky;
+  }
+  /* on linked buttons */
+  nav a {
+    color: #c5e7f8;
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    position:sticky;
+  }
+  /* on touch */
+  nav a:hover { 
+    color: #898cbf;
+    background-color: #7c7fbc;
+  }
+  /* on click */
+  nav a:active { 
+    color: #efefef;
+    background-color:#7c7fbc ;
+  }
+  .home{
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 5%;
+  }
+  .search{
+    flex-basis: 25%;
+    background: #a8aaca;
+    position: relative;
+    top: auto;
+  align-self: flex-start;
+  }
+  .profile{
+    flex-basis: 25%;
+    background: #a8aaca;
+    position: relative;
+    top: auto;
+  align-self: flex-start;
+  }
+  .header {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+  }
+ button {
+    width: 120px;
+    background-color: #243b6bd8;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+  }
+  a{
+    color: aliceblue;
+  }
+
+  a:link{ text-decoration: none;
+
+  }

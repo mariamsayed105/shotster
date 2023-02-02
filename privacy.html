@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Social Media Login</title>
+  <style>
+    .box {
+  background-color: rgb(139, 162, 231);
+  width: 70%;
+  padding: 20px;
+  margin-top: 20vh;
+margin-left: 20vh;
+}
+
+.var {
+  font-weight: bold;
+  text-align: center;
+}
+
+    # {
+  text-align: center;
+}
+
+ form {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 20px;
+    padding: 10px 20px;
+}
+
+ .label {
+  display: block;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+ .input[type="text"],  .textarea {
+  width: 30%;
+  padding: 12px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+  .settings-container {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+   input { 
+    margin-top: 10px;
+    padding: 5px;
+  }
+  button {
+  background-color: #4a6298;
+  width: 50%;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+ 
+</style>
+</head>
+<body>
+  <!-- to create a box  -->
+  <div class="box">
+<div id="profile">
+  <form>
+    <h1>privacy settings</h1>
+posts veiws. <select>
+  <option value="option1">everybody</option>
+  <option value="option2">friends</option>
+  <option value="option3">selected friends</option>
+  <option value="option4">none</option>
+
+</select><br><br>
+post comments.  <select>
+  <option value="option1">everybody</option>
+  <option value="option2">friends</option>
+  <option value="option3">selected friends</option>
+  <option value="option2">none</option>
+</select><br><br>   
+    <button type="submit">Save Changes</button>
+  </form>
+</div>
+
+</div>
+<div class="box">
+  <div id="profile">
+    <form>
+      <h1>Edit profile</h1>
+      <label for="profile_picture">Profile Picture:</label>
+      <input type="file" id="profile_picture" name="profile_picture">
+      <br>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+      <br>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" placeholderß="Your current username">
+      <br><br>
+      <label for="bio">Bio:</label>
+      <textarea id="bio" name="bio"></textarea>
+      <br>
+    </div>
+  <div class="settings-container">
+    
+      
+     
+      <button type="submit">Save Changes</button>
+    </form>
+  </div>
+  
+  </div>

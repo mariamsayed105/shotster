@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Social Media Login</title>
+  <style>
+ 
+
+.var {
+  font-weight: bold;
+  text-align: center;
+}
+
+    # {
+  text-align: center;
+}
+
+ form {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 20px;
+    padding: 10px 20px;
+}
+
+ .label {
+  display: block;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+ .input[type="text"],  .textarea {
+  width: 30%;
+  padding: 12px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+ .input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.input[type="submit"]:hover {
+  background-color: #45a049;
+}
+  .settings-container {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+   input { 
+    margin-top: 10px;
+    padding: 5px;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body style="text-align: left ; margin-left: 20%;">
+<div id="profile">
+  <form>
+    <h1>Edit profile</h1>
+    <label for="profile_picture">Profile Picture:</label>
+    <input type="file" id="profile_picture" name="profile_picture">
+    <br>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+    <br>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" placeholderß="Your current username">
+    <br><br>
+    <label for="bio">Bio:</label>
+    <textarea id="bio" name="bio"></textarea>
+    <br>
+  </div>
+<div class="settings-container">
+  
+    
+   
+    <button type="submit">Save Changes</button>
+  </form>
+</div>
